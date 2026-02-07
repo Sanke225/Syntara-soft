@@ -1,0 +1,331 @@
+/* */
+html {
+    scroll-behavior: smooth;
+    font-size: 16px;
+}
+
+/* */
+body {
+
+    font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+    font-size: 1rem;
+    line-height: 1.7;
+}
+/* Mes couleurs*/
+:root {
+    --primary-color: #0F172A;
+    --secondary-color: #6366F1;
+    --tertiary-color: #F8FAFC;
+    --quaternary-color: #036e7ea6;
+}
+
+/* mes tailles h1 3rem h2 2.5rem/h3 1.8rem/h4 1.25rem/p 1.2rem */
+
+
+                                                        /*TYPOGRAPHIE*/
+/*Grand Ecran*/
+h1 {                            /*Titre principal*/
+    font-size: 3rem;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 1rem;
+}
+h2 {                            /*Titres de section*/
+    font-size: 2.25rem;       
+    font-weight: 600;
+    line-height: 1.3;
+    margin-bottom: 1rem;
+}
+h3 {                            /*Services / cartes*/
+    font-size: 1.5rem;       
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+h4 {                             /*Petits titres*/ 
+    font-size: 1.25rem;       
+    font-weight: 500;
+}
+p {                              /*Paragraphes*/ 
+    font-size: 1rem;
+    line-height: 1.7;
+    color: var(--tertiary-color);
+}
+.text-muted {                     /*Texte secondaire*/
+    font-size: 0.95rem;
+    color: var(--tertiary-color);
+}
+a {                                /*Liens & navigation*/
+    color: var(--tertiary-color);
+    transition: color 0.3s ease;
+    text-decoration: none;
+}
+a:hover {                            /*Survol des liens*/
+    color: var(--primary-color);
+}
+nav a {                               /*Taille des liens de navigation*/
+    font-size: 1rem;
+    font-weight: 500;
+}
+.btn {                                /*Bouton*/
+    position: relative;
+    width: 150px;
+    height: 40px;
+    font-size: 0.95rem;
+    font-weight: 500;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.4s ease;
+    overflow: hidden;
+    color: var(--tertiary-color);
+}
+.push3d {
+    background: linear-gradient(145deg, #0b7780 0%, var(--secondary-color) 80%);
+    box-shadow: 5px 5px 5px #034b58#ebf2f3;
+    transition: all 0.1s ease;
+    transform-style: preserve-3d;
+    perspective: 1000px;
+    position: relative;
+}
+.push3d:hover {
+    transform: translateY(4px);
+    transform: translateY(-5px) rotateX(10deg) rotateY(-10deg) scale(1.05);
+    box-shadow: 
+        0 15px 35px var(--tertiary-color),
+        0 5px 15px var(--secondary-color),
+        inset 0 0 20px rgba(255, 255, 255, 0.1);
+    }
+
+.input {                                /*Couleur des cages*/
+    border-color: var(--secondary-color);
+}
+
+
+
+ul, li {                                  /*Listes*/
+font-size: 1rem;
+line-height: 1.6;
+}
+
+/*Petit Ecran*/
+                                    /*Barre de navigation*/
+/* espacement dans ka nav*/
+.navbar a {
+    padding: 10px 16px;
+    border-radius: 8px;
+    display: inline-block;
+}
+.navbar ul {
+    display: flex;
+    gap: 10px;
+}
+
+/*La ligne entre la navbar et Hero*/
+.navbar-blue {
+    border-bottom: 1px solid var(--secondary-color);
+}
+/*Couleur des textes du navbar*/
+.navbar-blue .nav-link {
+    color: var(--tertiary-color)!important;
+    font-weight: bold;
+}
+
+.navbar-logo {
+    color: var(--secondary-color);
+    font-style: italic;
+}
+
+                                    /* Section Hero*/
+
+/* l'arrière plan de la section hero*/
+.background-modif {
+    background-image: url('../IMG/Hero.jpg');
+    background-size: cover;
+    background-position: center;
+    min-height: 75vh;
+    color: var(--tertiary-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    opacity: 0.9;
+    background-attachment: fixed;
+    position: relative;
+}
+
+
+/*l'overlay de mon hero */
+.hero::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(15, 23, 42, 0.65);
+}
+
+/*l'arrière plan du sous hero */
+.sous-hero {
+    height: 25vh;
+    width: 100%;
+    background: linear-gradient(145deg, #0b7780 40%, var(--secondary-color) 60%);
+}
+.sous-hero p {
+    color: var(--tertiary-color);
+    font-size: 1.2rem;
+}
+
+
+.sous-hero h2 {
+    color: var(--tertiary-color);
+}
+
+.span1 {
+    font-style: italic;
+}
+
+
+                                    /* Section Services*/
+.services1 {
+    width: 100%;
+    min-height: 70vh;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.services1 p {
+    color: var(--primary-color);
+}
+
+
+/*A propos de nous*/
+.modif-paragraphe p {
+    color: var(--primary-color);
+}
+
+/*Couleur des cards*/
+.card-ccolor {
+    background: linear-gradient(145deg, #0b7780 0%, var(--secondary-color) 80%);
+}
+
+/* */
+.a-propos {
+    width: 100%;
+    min-height: 65vh;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/*Projets Réalisés */
+.project-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.08);
+}
+
+/* Bande défilante*/
+.tech-band {
+    background: linear-gradient(145deg, #0b7780 0%, var(--secondary-color) 80%);
+    color: white;
+    padding: 15px 0;
+    overflow: hidden;
+}
+.scroll-container {
+    white-space: nowrap;
+}
+.scroll-text {
+    display: inline-block;
+    animation: scroll-left 20s linear infinite;
+    font-weight: 600;
+    font-size: 18px;
+    letter-spacing: 1px;
+}
+@keyframes scroll-left {
+    from {
+    transform: translateX(0);
+}
+    to {
+    transform: translateX(-50%);
+}
+}
+
+
+/*Témoignages*/
+.temoignage {
+    background: var(--tertiary-color);
+}
+
+.badge-temoignage {
+    background: var(--secondary-color);
+    color: var(--tertiary-color);
+    padding: 6px 14px;
+    border-radius: 20px;
+    font-size: 12px;
+    letter-spacing: 1px;
+}
+
+.gradient-texte {
+    background: linear-gradient(145deg, #0b7780 0%, var(--secondary-color) 80%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+}
+
+.temoignage-card {
+    border: none;
+    border-radius: 20px;
+    padding: 10px;
+}
+
+.gradient-card {
+    background: linear-gradient(145deg, #0b7780 0%, var(--secondary-color) 80%);
+}
+
+.avatar {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background: var(--tertiary-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+}
+
+.avatar.dark {
+    background: linear-gradient(145deg, #0b7780 0%, var(--secondary-color) 80%);
+    color: white;
+}
+
+.etoile {
+    color: #ffc107;
+    font-size: 18px;
+}
+/*Fin Témoignages*/
+
+/*Contact*/
+.contact {
+    background: #f8f9fb;
+}
+
+.contact .card {
+    border-radius: 16px;
+}
+/*Fin contact*/
+
+/*Footer*/
+.footer-modif {
+color: var(--secondary-color);
+}
+/*Fin de footer*/
