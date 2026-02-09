@@ -2,6 +2,7 @@
 html {
     scroll-behavior: smooth;
     font-size: 16px;
+    
 }
 
 /* */
@@ -228,11 +229,6 @@ line-height: 1.6;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.project-card:hover {
-    transform: translateY(-6px);
-    box-shadow: 0 15px 30px rgba(0,0,0,0.08);
-}
-
 /* Bande défilante*/
 .tech-band {
     background: linear-gradient(145deg, #0b7780 0%, var(--secondary-color) 80%);
@@ -326,6 +322,20 @@ line-height: 1.6;
 
 /*Footer*/
 .footer-modif {
-color: var(--secondary-color);
+    background: linear-gradient(145deg, #0b7780 0%, var(--secondary-color) 80%);
+    background-clip: text;
+    color: transparent;
 }
 /*Fin de footer*/
+
+
+/*Debut des hover de tout les images*/
+.img-hover:hover {
+    transform: translate(-10px, -15px);
+}
+
+/*Debut des hover de tout des cards*/
+.project-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.08);
+}
